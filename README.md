@@ -38,4 +38,4 @@ This command will create a Custom Stage JAR at `target/osaCustomFunctionAggregat
 
 6. Create a pipeline that has delimited strings as one of its fields. You can use the examples from above. Add a Query Stage and [create an expression that uses the custom function](https://docs.oracle.com/en/middleware/fusion-middleware/osa/19.1/using/adding-custom-functions-and-custom-stages.html#GUID-485E8FFB-84C6-4690-A803-E0A57B28744E).
 
-7. When running the pipeline, the output of the Custom JAR Function should show the title of the book as well as published date. 
+7. When running the pipeline, the output of the Custom JAR Function should show the aggregate value of the list. 
