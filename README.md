@@ -12,11 +12,12 @@ Written to be used with Oracle GoldenGate Stream Analytics (Installer or OCI Mar
 ## Functionality
 The custom JAR contains the following two functions:
 
-`double sumInList(String input, String delimiter, int tupleSize, int position )`
-`double avgInList(String input, String delimiter, int tupleSize, int position )`
+* `double sumInList(String input, String delimiter, int tupleSize, int position )`
+* `double avgInList(String input, String delimiter, int tupleSize, int position )`
 
-The function calculate a sum or average of numeric fields (decimal or integer) within the delimited string `input`. The parameter `delimiter` defines the delimiter used to separate fields, for example ",". 
-If every field in the list is a number that should be aggregates, please choose `tupleSize`=1 and `position`=0. 
+The functions calculate a sum or average of numeric fields (decimal or integer) within the delimited string `input`. 
+The parameter `delimiter` defines the delimiter used to separate fields, for example ",". 
+If every field in the list is a number that should be aggregated, please choose `tupleSize`=1 and `position`=0. 
 If the list consists of tuples, please select `tupleSize`>1 with the actual size, and `position` with the location of the relevant field within the tuple (0 to tupleSize-1).
 
 ## Examples
